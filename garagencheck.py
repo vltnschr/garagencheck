@@ -5,7 +5,7 @@ from pathlib import Path
 
 URL = "https://www.oevw.at/garagen"
 NTFY_TOPIC = os.environ["NTFY_TOPIC"]
-PATTERN = re.compile(r"\b1110\s+Wien", re.IGNORECASE)
+PATTERN = re.compile(r"\bGaragen", re.IGNORECASE)
 STATE = Path(__file__).with_name("last_state.txt")
 
 def main():
